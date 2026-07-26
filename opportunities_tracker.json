@@ -25,7 +25,7 @@
     "start_date": "",
     "end_date": "",
     "url": "https://airdrops.io/cambria/",
-    "notes": "Game on Base/Ethereum. RSGP Loot Chests airdrop. lobby.cambria.gg. TGE upcoming. 265\u00b0 community interest.",
+    "notes": "Game on Base/Ethereum. RSGP Loot Chests airdrop. lobby.cambria.gg. TGE upcoming. 265° community interest.",
     "created": "2026-07-26T01:55:58.339248+00:00",
     "updated": "2026-07-26T01:56:25.941335+00:00"
   },
@@ -40,7 +40,7 @@
     "start_date": "20260720",
     "end_date": "20260803",
     "url": "https://airdrops.io/plether/",
-    "notes": "Perp DEX on Base. Confirmed airdrop. Ends Aug 3. Domain plether.io down \u2014 verify alternative.",
+    "notes": "Perp DEX on Base. Confirmed airdrop. Ends Aug 3. Domain plether.io down — verify alternative.",
     "created": "2026-07-26T01:55:58.339253+00:00",
     "updated": "2026-07-26T01:56:25.941352+00:00"
   },
@@ -70,7 +70,7 @@
     "start_date": "",
     "end_date": "",
     "url": "https://airdrops.io/dbk-chain/",
-    "notes": "DeBank's own L2 (OP Stack). Chain ID 20240603. Node setup: github.com/DeBankDeFi/rollup-node-dbkchain. DeBank is #1 portfolio tracker \u2014 strategic importance. Mainnet live.",
+    "notes": "DeBank's own L2 (OP Stack). Chain ID 20240603. Node setup: github.com/DeBankDeFi/rollup-node-dbkchain. DeBank is #1 portfolio tracker — strategic importance. Mainnet live.",
     "created": "2026-07-26T01:55:58.339266+00:00",
     "updated": "2026-07-26T01:56:25.941392+00:00"
   },
@@ -175,9 +175,10 @@
     "start_date": "20260602",
     "end_date": "",
     "url": "https://airdrops.io/tradoor0/",
-    "notes": "",
+    "notes": " Domain: tradoor0.xyz (verified). Automated market making on Hyperliquid.",
     "created": "2026-07-26T01:55:58.339315+00:00",
-    "updated": "2026-07-26T01:56:25.941516+00:00"
+    "updated": "2026-07-26T01:56:25.941516+00:00",
+    "last_verified": "2026-07-26T02:15:00+00:00"
   },
   {
     "name": "3Jane",

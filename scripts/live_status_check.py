@@ -56,7 +56,7 @@ CHECKS = {
         "web": "https://lobby.cambria.gg",
     },
     "Tradoor0": {
-        "web": "https://tradoor0.io",
+        "web": "https://tradoor0.xyz",
     },
     "JTX": {
         "web": "https://jtx.app",
