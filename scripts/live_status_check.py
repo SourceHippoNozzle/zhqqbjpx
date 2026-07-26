@@ -71,7 +71,7 @@ CHECKS = {
         "rpc": None,
     },
     "Canopy Network": {
-        "web": None,
+        "web": "https://www.canopynetwork.org",
         "rpc": None,
     },
     # --- Tier 3: Medium signal (50°-100°) ---
