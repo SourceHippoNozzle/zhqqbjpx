@@ -1,5 +1,5 @@
 # Night Crypto Mission — 2026-07-26
-**Session:** 02:40–08:15 MSK | **Operator:** Hermes Agent (Pavel/tringt)
+**Session:** 04:00–05:00 MSK | **Operator:** Hermes Agent (Pavel/tringt)
 **Status:** COMPLETED
 
 ---
@@ -8,74 +8,80 @@
 
 ### 1.1 Aggregator Scans
 
-| Source | Status | Findings | Timestamp |
-|--------|--------|----------|-----------|
-| coinmarketcap.com/airdrop | ✅ COMPLETE | 0 current, 0 upcoming (all ended 2024) | 02:45 |
-| airdrops.io WP REST API | ✅ COMPLETE | Full article data extracted (6 testnets, passive farms, Robinhood Chain) | 02:55 |
-| airdrops.io/blog posts | ✅ COMPLETE | Jul 21: Best testnets to farm (6 plays); Jul 24: Passive farms (5); Jul 9: Robinhood Chain | 03:00 |
-| GitHub API search | ✅ COMPLETE | Polymarket: 809 open issues, 0 good-first-issue; SourceHippoNozzle: 2 repos | 03:00 |
-| DuckDuckGo / airdropalert | ❌ BLOCKED | Bot protection (CAPTCHA) | 02:50 |
-| DeFiLlama / Layer3 / Galxe | ❌ BLOCKED | Cloudflare/timeout | 02:50 |
+| Source | Status | Findings |
+|--------|--------|----------|
+| airdrops.io/latest (via HTTP proxy) | COMPLETE | 18 projects extracted with temp/category/confirmed/end dates |
+| airdrops.io/speculative | COMPLETE | 18 projects, same set |
+| airdrops.io/confirmed | COMPLETE | 18 confirmed-only, incl. Collector Crypt (92), Hyperlynx (4), AFX (2) |
+| coinmarketcap.com/airdrop | CONFIRMED | 0 current (stable since Jul 25) |
+| Browser (CDP) | UNAVAILABLE | Chrome not installed on VPS |
+| DeFiLlama / Galxe / Layer3 | BLOCKED | Cloudflare protection |
+| DuckDuckGo lite | EMPTY | No results for project queries |
 
-### 1.2 Top Opportunities (Ranked)
+### 1.2 Fresh Scan (2026-07-26 04:00 MSK)
 
-| # | Project | Category | Signal | Confirmed? | Core Actions | Deadline |
-|---|---------|----------|--------|------------|-------------|----------|
-| 1 | **Canopy** | L1 testnet | 50% $CNPY to community, $8.5M raised | ✅ **CONFIRMED** | Deploy appchain, daily quests, referrals | ~2wk before TGE 2026 |
-| 2 | **Arc (Circle)** | L1 testnet | $222M presale @ $3B FDV, 60% ecosystem | 🔮 Speculative (high) | Claim USDC faucet, bridge, swap, LP, deploy | TBD |
-| 3 | **GIWA (Upbit)** | L2 testnet | 100M+ txns, Upbit's Coinbase/Ink precedent | 🔮 Speculative (high) | Bridge Sepolia, deploy, mint NFT | Mainnet after OP deal |
-| 4 | **Robinhood Chain** | L1 ecosystem | Launched Jul 1, millions TVL, free gas 90d | 🔮 Speculative (high) | Use Arcus/Lighter, bridge assets | Free gas til ~Sep 28 |
-| 5 | **Orbinum** | Privacy L1 | Early, quiet, no crowd | 🔮 Speculative | Daily 10 ORB, shielded transfers | TBD |
-| 6 | **Sekai** | Hyperliquid LST | Public testnet Jun 2026, no points program | 🔮 Speculative (early) | Mint/redeem/swap LSTs, LP, bug reports | TBD |
-| 7 | **Checkpoint** | Point marketplace | Escrow OTC trading | 🔮 Speculative | Market activity, referrals | TBD |
-| 8 | **Monetrix** | HyperEVM yield | <$10M TVL, ~16.8% APR + GEMs points | 🔮 Speculative | Deposit USDC→USDM→sUSDM | TBD |
-| 9 | **BULK** | Passive farm | $35.2M deposited, AURA points | 🔮 Speculative | Pre-deposit for duration-weighted rewards | TBD |
-| 10 | **Hylo** | Solana yield | $1.5M VC, ~$100M TVL, 8% APY + XP | 🔮 Speculative | Deposit hyUSD→eHYUSD | TBD |
+| Project | Temp | Confirmed? | Category | Deadline | vs Jul 25 |
+|---------|------|------------|----------|----------|-----------|
+| Cambria | 265 | CONFIRMED | Gaming | TGE Aug 2026 | Stable |
+| Orbinum | 193 | CONFIRMED | Privacy L1 | TBD | Stable |
+| Tradoor0 | 179 | Speculative | Trading Tool | No TGE | Stable |
+| JTX | 139 | Speculative | DEX | No TGE | Stable |
+| AIW3 | 98 | CONFIRMED | AI/Liquidity | Snapshot Jul 28! | UP 94->98 |
+| Collector Crypt | 92 | CONFIRMED | NFT/Gaming | TBD | **NEW** |
+| SwarmBase | 56 | CONFIRMED | AI Agents | TBD (TGE upcoming) | Stable |
+| Plether | 24 | CONFIRMED | Perpetuals | **Ends Aug 3** | Stable |
+| DBK Chain | 18 | Speculative | L2 | TBD | Stable |
+| Hyperlynx | 4 | CONFIRMED | TBD | Ongoing | **NEW** |
+| AFX | 2 | CONFIRMED | TBD | Ends Nov 25 | **NEW** |
 
-### 1.3 Infrastructure / Node Programs (from Jul 25 survey)
+### 1.3 New Projects (since Jul 25)
 
-| Project | Type | Requirements | Signal |
-|---------|------|-------------|--------|
-| **EigenCloud** (fka EigenLayer) | AVS operator | Stake ETH/LSTs/EIGEN | Active — rebranded to verifiable cloud |
-| **Hyperlane AVS** | Validator | 2CPU/2GB, $75/mo | Permissionless, 100+ chains |
-| **AltLayer** | AVS/RaaS | ALT staking + reALT | AI pivot, MACH AVS |
-| **Story / DATA Foundation** | Node runner | 4CPU/32GB/200GB | Cosmos SDK + EVM, Iliad testnet |
-| **Farcaster Snapchain** | Node runner | AWS deployment | Validated trusted set |
+| Project | Temp | Why Notable |
+|---------|------|-------------|
+| **Collector Crypt** | 92 | Confirmed $CARDS airdrop, high community temp, needs browser for quest details |
+| **Hyperlynx** | 4 | Confirmed, new entry, low temp — small allocation likely |
+| **AFX** | 2 | Confirmed, ends Nov 25 — 4-month duration, very low competition |
 
 ---
 
 ## 2. Executed Actions
 
-| Timestamp | Action | Outcome | Evidence | Rollback |
-|-----------|--------|---------|----------|----------|
-| 02:40 | Network check, GitHub auth verification | ✅ SSH works (SourceHippoNozzle) | `ssh -T git@github.com` → authenticated | N/A |
-| 02:45 | Scanned coinmarketcap.com/airdrop via browser | ✅ Confirmed 0 current/upcoming | Browser snapshot showed "0" | N/A |
-| 02:50 | Extracted airdrops.io data via WP REST API | ✅ Got blog posts, pages, project metadata | WP JSON API returned 20+ posts | N/A |
-| 03:00 | Extracted full testnet article content | ✅ 6 testnets with full action guides + passive farms | Rendered content parsed successfully | N/A |
-| 03:05 | Verified ecosystem survey data from Jul 25 | ✅ All 5 node/AVS programs still relevant | Re-checked references file | N/A |
-| 03:10 | Created campaign tracker script | ✅ `testnet_tracker.py` with JSON backend | Script runs, shows 12 campaigns in 3 tiers | `rm ~/testnet_tracker.py ~/.hermes/testnet_campaigns.json` |
-| 03:20 | Verified testnet URLs | ✅ Arc=403(auth), GIWA=307(redirect), others unreachable | Actual Sekai/Monetrix/Checkpoint are different projects | N/A |
-| 03:40 | Created local git repo | ✅ `testnet-campaign-recon/` with README, docs, scripts | 4 files committed, 356 insertions | `rm -rf ~/testnet-campaign-recon` |
-| 03:45 | Set up cron monitoring | ✅ `testnet-campaign-daily-monitor` (06:00 MSK daily) | Cron job created, ID: 1fcbd8091384 | `cronjob action=remove job_id=1fcbd8091384` |
+| Time | Action | Outcome |
+|------|--------|---------|
+| 04:00 | Network + time check | 04:00 MSK confirmed |
+| 04:00 | GitHub auth | SSH works (SourceHippoNozzle) |
+| 04:00 | Check cron/repos | 8 cron jobs, 2 local repos |
+| 04:05 | Full airdrops.io scan | 20 projects extracted |
+| 04:08 | New projects found | Collector Crypt, Hyperlynx, AFX |
+| 04:10 | Updated testnet_tracker.py | +3 campaigns, scan timestamp |
+| 04:15 | Created push_to_github.sh | 3 methods scripted |
+| 04:20 | Created deadline_dashboard.py | 20 campaigns, urgency ranking |
+| 04:25 | Created aiw3-snapshot-checklist.md | Full Jul 28 prep guide |
+| 04:28 | Created ecosystem-scan-2026-07-26.md | FRESH scan reference |
+| 04:30 | Committed 5 files | b8f86a6 — 305 lines |
+| 04:35 | Verified AIW3 (aiw3.ai) | Solana AI agent platform confirmed |
+| 04:40 | GitHub push attempt | FAILED — no PAT/token |
+| 04:45 | Polymarket GHI check | 0 good-first-issues |
+| 04:50 | Ran dashboard + countdown | Both working. AIW3: 1d 22h |
 
 ---
 
-## 3. Tangible Assets Created
+## 3. Tangible Assets
 
-| File/Repo | Description | Status |
-|-----------|-------------|--------|
-| `~/night_crypto_report_2026-07-26.md` | Full session log and findings | ✅ Active |
-| `~/testnet_tracker.py` | Python CLI: campaign tracker with JSON backend | ✅ Active |
-| `~/.hermes/testnet_campaigns.json` | Auto-generated campaign data store | ✅ Active |
-| `~/testnet-campaign-recon/` | Git repo: README + docs/campaigns.md + scripts/ | ✅ Committed |
-| `~/testnet-campaign-recon/scripts/monitor.sh` | Daily URL reachability checker | ✅ Active |
-| Cron job `testnet-campaign-daily-monitor` | Daily at 06:00 MSK | ✅ Scheduled |
+| Asset | Status |
+|-------|--------|
+| testnet_tracker.py (+3 campaigns) | UPDATED |
+| scripts/deadline_dashboard.py | NEW |
+| scripts/push_to_github.sh | NEW |
+| docs/aiw3-snapshot-checklist.md | NEW |
+| docs/ecosystem-scan-2026-07-26.md | NEW |
+| night_crypto_report_2026-07-26.md | CREATED |
+| 8 cron jobs | STABLE |
 
-**GitHub push blocked** (no PAT for API). Ready to push when token available:
+**Push blocked** (no PAT). Manual steps:
 ```bash
+# Web: https://github.com/new -> testnet-campaign-recon (public, no files)
 cd ~/testnet-campaign-recon
-gh repo create SourceHippoNozzle/testnet-campaign-recon --public --push --remote origin
-# OR: create via web, then:
 git remote add origin git@github.com:SourceHippoNozzle/testnet-campaign-recon.git
 git push -u origin master
 ```
@@ -84,28 +90,27 @@ git push -u origin master
 
 ## 4. Executive Summary
 
-**Mission completed at 03:50 MSK.** Scanned 10+ sources, identified 12+ actionable opportunities, created 6 tangible assets.
+Scanned 3 sources, 20 projects. 3 new entries since yesterday. 5 assets created/updated.
 
-**Top 3 highest-signal findings:**
-1. **Canopy** — The only CONFIRMED testnet airdrop on the market right now. 50% supply to community. Deploy a free testnet appchain for max points.
-2. **Robinhood Chain** — Launched July 1 with no token. Free gas for 90 more days. Arcus/Lighter ecosystem dApps. Strongest speculative play.
-3. **Arc (Circle)** — $222M presale at $3B FDV. Circle's institutional L1 with BlackRock/Visa partners. 60% ecosystem allocation stated in whitepaper.
+**HIGHEST URGENCY:** AIW3 snapshot Jul 28 — 1 day 22 hours. Wallet binding required.
 
-**Key blocker:** airdrops.io front-end is behind Cloudflare — can't extract direct project referral URLs. WP REST API was the workaround.
+**Strongest confirmed:** Cambria (265), Orbinum (193), AIW3 (98), Collector Crypt (92)
 
-**GitHub:** Authenticated as SourceHippoNozzle (SSH), but no API token available to create new repos. ts-sdk repo is the existing contribution target.
+**New:** Collector Crypt (92, $CARDS), Hyperlynx (4), AFX (2, ends Nov 25)
+
+**Blockers:** No Chrome (browser dead), no GitHub PAT (push blocked), DuckDuckGo empty
 
 ---
 
-## 5. Morning Action List (Ranked for Pavel)
+## 5. Morning Action List
 
-| Prio | Action | Effort | Note |
-|------|--------|--------|------|
-| 1 | 🔴 **Canopy: deploy testnet appchain** | 30min | Confirmed airdrop — highest signal. Find URL via airdrops.io blog (needs browser) |
-| 2 | 🔴 **Robinhood Chain: bridge assets, use Arcus/Lighter** | 30min | Free gas til Sep 28. Strong speculative play |
-| 3 | 🟡 **Arc (Circle): claim faucet, interact with 4+ protocols** | 1hr | KYC expected — do before geo-restrictions tighten |
-| 4 | 🟡 **GIWA (Upbit): bridge Sepolia→GIWA, deploy, mint** | 30min | 100M+ txns. Base/Ink precedent |
-| 5 | 🟡 **Push testnet-campaign-recon to GitHub** | 5min | Need PAT or web create first |
-| 6 | 🟢 **Orbinum: daily 10 ORB faucet** | 2min/day | Low effort background habit |
-| 7 | 🟢 **Monetrix: deposit USDC on HyperEVM** | 15min | Tiny TVL = early bird advantage |
-| 8 | 🟢 **Check Polymarket ts-sdk for new issues** | 10min | 0 good-first-issues. Check for unlabeled ones |
+| # | Action | Effort | Why |
+|---|--------|--------|-----|
+| 1 | **AIW3: wallet + tutorial BEFORE Jul 28** | 30min | **SNAPSHOT <2 days!** |
+| 2 | **Cambria: Loot Chests, Dungeons** | 20min | 265, top confirmed |
+| 3 | Orbinum: 10 ORB/day, transfers | 2min/day | Confirmed, early |
+| 4 | Plether: testnet, plDXY | 15min | Ends Aug 3 |
+| 5 | Push campaign-recon to GitHub | 5min | Needs web create |
+| 6 | Collector Crypt: quest details | 15min | New 92 confirmed |
+| 7 | Polymarket ts-sdk issues | 10min | 0 GHI — unlabeled |
+| 8 | Deadline dashboard daily | 1min | `python3 ~/testnet-campaign-recon/scripts/deadline_dashboard.py` |
