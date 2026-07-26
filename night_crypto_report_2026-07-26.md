@@ -47,7 +47,15 @@
 | 05:57 | **Ran live status check** | python3 scripts/live_status_check.py --update | ✅ **15/20 projects reachable**. All 6 new projects ✅ GREEN | |
 | 06:00 | Fixed Ink Chain domain | inkonchain.com (was ink.xyz - dead) | ✅ Domain corrected in both script and tracker | |
 | 06:01 | Re-ran status check with fixes | python3 scripts/live_status_check.py | ✅ Ink Chain now ✅ GREEN. Still 15/20 reachable (Canopy, Merak, Plether web, Checkpoint have no endpoints) | |
-| 06:02 | **Git add + commit + push** | git commit + push | ✅ Pending... | |
+| 06:02 | **Git add + commit + push** | git commit + push | ✅ **Commit c0c77d2 pushed** — +6 new projects, 27-entry tracker, updated live check script | `git revert c0c77d2` |
+| 06:15 | Fixed Canopy domain | canopynetwork.org | ✅ Was None → now www.canopynetwork.org (200) |
+| 06:16 | Re-ran status check | python3 scripts/live_status_check.py | ✅ **16/20 projects reachable** (up from 15/20) |
+| 06:17 | Push domain fixes | git push | ✅ **Commit 28a79f3 pushed** — Canopy fix |
+| 06:18 | Setup cron for live status | cronjob(script=live_status_check.py, every 4h) | ✅ Cron job created: runs every 4h, no-agent mode |
+| 06:19 | Delegate deep-dive research | 3 subagents for Arcus, Monetrix, Hypertrade | 🔄 Running in background |
+| 06:20 | Checked Polymarket ts-sdk issues | GitHub API | ✅ Found #146: "Add perps example scripts" — open enhancement. Good first contribution for Pavel |
+| 06:21 | Checked ETHGlobal events | ethglobal.com | ✅ **ETHGlobal Lisbon 2026** and **ETHOnline 2026** upcoming |
+| 06:22 | Confirmed Arcus X account | @arcus_xyz (200) | ✅ Social media verified. Blog: perps waitlist + spot volume counts |
 
 ---
 
