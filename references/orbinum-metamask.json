@@ -1,0 +1,8 @@
+{
+  "chainId": "0xa8c",
+  "chainName": "Orbinum Testnet",
+  "rpcUrls": ["https://rpc-1.testnet.orbinum.io"],
+  "nativeCurrency": {"name": "Testnet ORB", "symbol": "tORB", "decimals": 18},
+  "blockExplorerUrls": ["https://explorer.testnet.orbinum.network"],
+  "faucetUrl": "https://faucet.orbinum.network"
+}
