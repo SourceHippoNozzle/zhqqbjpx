@@ -139,8 +139,8 @@ DEFAULT_CAMPAIGNS = {
         "name": "Monetrix (HyperEVM)",
         "type": "passive yeld + points",
         "url": "https://monetrix.io",
-        "docs": None,
-        "signal": "TIER 2 — Very early, small TVL",
+        "docs": "None",
+        "signal": "TIER 2: Very early, small TVL",
         "actions": [
             "Deposit USDC on HyperEVM",
             "Mint USDM",
@@ -148,12 +148,88 @@ DEFAULT_CAMPAIGNS = {
             "Accumulate GEMs points"
         ],
         "deadline": "TBD",
-        "last_checked": None,
+        "last_checked": "None",
         "status": "active",
         "notes": "~16.8% APR. 3-day redemption queue."
+    },
+    "cambria": {
+        "name": "Cambria",
+        "type": "game (confirmed airdrop)",
+        "url": "https://cambria.game",
+        "docs": "https://docs.cambria.game",
+        "signal": "TIER 1: HOT 265 deg: confirmed $RSGP airdrop Aug 2026",
+        "actions": [
+            "Create account with invite code",
+            "Link EVM + Solana + Abstract wallets",
+            "Check Loot Chests eligibility (Degen/Chad Score)",
+            "Fund wallet with USDC for Risk Keys",
+            "Play Dungeons for Trinkets/Essence Points",
+            "Duel Arena and side activities for points"
+        ],
+        "deadline": "Loot Chests: 14-day claim; TGE: Aug 2026",
+        "last_checked": "None",
+        "status": "active",
+        "notes": "$2.5M seed BITKRAFT/1kx, $2M strategic BITKRAFT/SkyMavis. Abstract/Solana/EVM."
+    },
+    "aiw3": {
+        "name": "AIW3",
+        "type": "AI trading platform (confirmed airdrop)",
+        "url": "https://aiw3.io",
+        "docs": "https://docs.aiw3.io",
+        "signal": "TIER 1: URGENT: snapshot Jul 28, TGE Aug 3",
+        "actions": [
+            "Connect wallet and complete tutorial BEFORE Jul 28",
+            "Daily check-ins (7-day cycle, 3 to 10 pts)",
+            "X/Twitter + Telegram community tasks",
+            "Daily predictions (up to 100 pts/day)",
+            "Publish AI strategies for passive points",
+            "Refer friends",
+            "Check eligibility Jul 29, claim Aug 3"
+        ],
+        "deadline": "Snapshot Jul 28! Eligibility Jul 29. TGE Aug 3.",
+        "last_checked": "None",
+        "status": "active",
+        "notes": "Solana + BNB Chain. GalaXin Capital, LD Capital backed. Free tasks available."
+    },
+    "swarmbase": {
+        "name": "SwarmBase",
+        "type": "AI agent infra (confirmed airdrop)",
+        "url": "https://swarmbase.io",
+        "docs": "https://docs.swarmbase.io",
+        "signal": "TIER 1: Confirmed: 20% of 1B $SWARM to community",
+        "actions": [
+            "Connect EVM wallet to opBNB (chain 204)",
+            "Fund wallet with tiny BNB for gas",
+            "Register account on-chain",
+            "Daily check-ins (10 pts base, up to 3x streak)",
+            "Mint Pioneer + Builder + OG badges",
+            "Use SwarmCore agents for Task Credits",
+            "Referrals (up to 860 pts per referral)"
+        ],
+        "deadline": "TBD (TGE after funding rounds closed Jul 2026)",
+        "last_checked": "None",
+        "status": "active",
+        "notes": "Castrum Capital, M2M Capital backed. $4M Jul 2026. Needs tiny opBNB gas."
+    },
+    "jtx": {
+        "name": "JTX (Jito)",
+        "type": "trading platform (speculative)",
+        "url": "https://jtx.app",
+        "docs": "None",
+        "signal": "TIER 2: 139 deg: Jito trading app, no token confirmed",
+        "actions": [
+            "Sign up with email or Solana wallet",
+            "Claim username",
+            "Fund Solana wallet with SOL + USDC",
+            "Place spot trades",
+            "Share referral link (20% lifetime fee share)"
+        ],
+        "deadline": "No announced TGE",
+        "last_checked": "None",
+        "status": "active",
+        "notes": "Built by Jito Labs (JitoSOL). No confirmed token. Referral program active."
     }
 }
-
 
 def load_tracker():
     """Load campaign tracker or initialize defaults."""
