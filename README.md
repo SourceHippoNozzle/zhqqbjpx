@@ -14,6 +14,8 @@ Automated testnet campaign orchestration for Pavel (tringt).
 python3 campaign_orchestrator.py           # Show status
 python3 campaign_orchestrator.py --report   # Generate markdown report
 python3 campaign_orchestrator.py --checkin  # Mark all as checked
+python3 scripts/opportunities_tracker.py   # Auto-fetch aggregator data + save to tracker
+python3 scripts/opportunities_tracker.py --status  # Show current status
 ```
 
 ## Active Campaigns (Jul 26, 2026)
