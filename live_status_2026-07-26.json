@@ -1,7 +1,47 @@
 {
+  "Arcus": {
+    "name": "Arcus",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://arcus.xyz",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Monetrix": {
+    "name": "Monetrix",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://www.monetrix.xyz",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Ondo Perps": {
+    "name": "Ondo Perps",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://app.ondoperps.xyz",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Hypertrade": {
+    "name": "Hypertrade",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://ht.xyz",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
   "Orbinum": {
     "name": "Orbinum",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "rpc": {
       "url": "https://rpc-1.testnet.orbinum.io",
       "result": "0xa8c",
@@ -24,54 +64,9 @@
     },
     "summary": "\u2705 0xa8c | faucet:HTTP 200 | app:HTTP 200 | exp:HTTP 200"
   },
-  "DBK Chain": {
-    "name": "DBK Chain",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
-    "rpc": {
-      "url": "https://rpc.mainnet.dbkchain.io",
-      "result": "0x134d8db",
-      "msg": "\u26a0\ufe0f 0x134d8db"
-    },
-    "summary": "\u26a0\ufe0f 0x134d8db"
-  },
-  "SwarmBase": {
-    "name": "SwarmBase",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
-    "web": {
-      "url": "https://swarmbase.io",
-      "status": 200,
-      "msg": "HTTP 200"
-    },
-    "summary": "HTTP 200"
-  },
-  "Silent Protocol": {
-    "name": "Silent Protocol",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
-    "web": {
-      "url": "https://app.silentprotocol.org",
-      "status": 200,
-      "msg": "HTTP 200"
-    },
-    "summary": "HTTP 200"
-  },
-  "Merak Testnet": {
-    "name": "Merak Testnet",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
-    "summary": ""
-  },
-  "AIW3": {
-    "name": "AIW3",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
-    "web": {
-      "url": "https://aiw3.ai",
-      "status": 200,
-      "msg": "HTTP 200"
-    },
-    "summary": "HTTP 200"
-  },
   "Cambria": {
     "name": "Cambria",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://lobby.cambria.gg",
       "status": 200,
@@ -81,7 +76,7 @@
   },
   "Tradoor0": {
     "name": "Tradoor0",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://tradoor0.xyz",
       "status": 200,
@@ -89,9 +84,44 @@
     },
     "summary": "HTTP 200"
   },
+  "Silent Protocol": {
+    "name": "Silent Protocol",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://app.silentprotocol.org",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Ink Chain": {
+    "name": "Ink Chain",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://inkonchain.com",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Canopy Network": {
+    "name": "Canopy Network",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "summary": ""
+  },
+  "AIW3": {
+    "name": "AIW3",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://aiw3.ai",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
   "JTX": {
     "name": "JTX",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://jtx.app",
       "status": 200,
@@ -99,13 +129,33 @@
     },
     "summary": "HTTP 200"
   },
+  "SwarmBase": {
+    "name": "SwarmBase",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "web": {
+      "url": "https://swarmbase.io",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "DBK Chain": {
+    "name": "DBK Chain",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
+    "rpc": {
+      "url": "https://rpc.mainnet.dbkchain.io",
+      "result": "0x134d8db",
+      "msg": "\u26a0\ufe0f 0x134d8db"
+    },
+    "summary": "\u26a0\ufe0f 0x134d8db"
+  },
   "Plether": {
     "name": "Plether",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "x": {
       "url": "https://x.com/plether_fi",
-      "status": 0,
-      "msg": "HTTP 000"
+      "status": 200,
+      "msg": "HTTP 200"
     },
     "github": {
       "url": "https://github.com/Plether-Fi",
@@ -116,7 +166,7 @@
   },
   "Robinhood Chain": {
     "name": "Robinhood Chain",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://robinhood.com/chain",
       "status": 200,
@@ -124,14 +174,14 @@
     },
     "summary": "HTTP 200"
   },
-  "GIWA": {
-    "name": "GIWA",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+  "Merak Testnet": {
+    "name": "Merak Testnet",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "summary": ""
   },
   "3Jane": {
     "name": "3Jane",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://3jane.xyz",
       "status": 200,
@@ -141,7 +191,7 @@
   },
   "Legend": {
     "name": "Legend",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "web": {
       "url": "https://legend.io",
       "status": 200,
@@ -151,7 +201,7 @@
   },
   "Checkpoint": {
     "name": "Checkpoint",
-    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "timestamp": "2026-07-26T02:41:44.347995+00:00",
     "summary": ""
   }
 }

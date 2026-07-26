@@ -29,6 +29,24 @@ if not os.path.exists(TRACKER_PATH):
 
 # Projects with known RPC/web endpoints to probe
 CHECKS = {
+    # --- Tier 1: Hot projects (>200°) ---
+    "Arcus": {
+        "web": "https://arcus.xyz",
+        "rpc": None,
+    },
+    "Monetrix": {
+        "web": "https://www.monetrix.xyz",
+        "rpc": None,
+    },
+    "Ondo Perps": {
+        "web": "https://app.ondoperps.xyz",
+        "rpc": None,
+    },
+    "Hypertrade": {
+        "web": "https://ht.xyz",
+        "rpc": None,
+    },
+    # --- Tier 2: High signal (100°-200°) ---
     "Orbinum": {
         "rpc": "https://rpc-1.testnet.orbinum.io",
         "faucet": "https://faucet.orbinum.network",
@@ -38,6 +56,35 @@ CHECKS = {
         "expected_chain": "0xa8c",
         "chain_name": "Orbinum Testnet (2700)",
     },
+    "Cambria": {
+        "web": "https://lobby.cambria.gg",
+    },
+    "Tradoor0": {
+        "web": "https://tradoor0.xyz",
+    },
+    "Silent Protocol": {
+        "web": "https://app.silentprotocol.org",
+        "rpc": None,
+    },
+    "Ink Chain": {
+        "web": "https://inkonchain.com",
+        "rpc": None,
+    },
+    "Canopy Network": {
+        "web": None,
+        "rpc": None,
+    },
+    # --- Tier 3: Medium signal (50°-100°) ---
+    "AIW3": {
+        "web": "https://aiw3.ai",
+    },
+    "JTX": {
+        "web": "https://jtx.app",
+    },
+    "SwarmBase": {
+        "web": "https://swarmbase.io",
+        "rpc": None,
+    },
     "DBK Chain": {
         "rpc": "https://rpc.mainnet.dbkchain.io",
         "explorer": None,
@@ -45,30 +92,7 @@ CHECKS = {
         "expected_chain": "0x1345f1b",
         "chain_name": "DBK Chain (20240603)",
     },
-    "SwarmBase": {
-        "web": "https://swarmbase.io",
-        "rpc": None,
-    },
-    "Silent Protocol": {
-        "web": "https://app.silentprotocol.org",
-        "rpc": None,
-    },
-    "Merak Testnet": {
-        "web": None,
-        "rpc": None,
-    },
-    "AIW3": {
-        "web": "https://aiw3.ai",
-    },
-    "Cambria": {
-        "web": "https://lobby.cambria.gg",
-    },
-    "Tradoor0": {
-        "web": "https://tradoor0.xyz",
-    },
-    "JTX": {
-        "web": "https://jtx.app",
-    },
+    # --- Tier 4: Lower signal ---
     "Plether": {
         "web": None,
         "x": "https://x.com/plether_fi",
@@ -77,9 +101,9 @@ CHECKS = {
     "Robinhood Chain": {
         "web": "https://robinhood.com/chain",
     },
-    "GIWA": {
+    "Merak Testnet": {
         "web": None,
-        "rpc": None,  # No public endpoint known
+        "rpc": None,
     },
     "3Jane": {
         "web": "https://3jane.xyz",
