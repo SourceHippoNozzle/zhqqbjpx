@@ -1,0 +1,67 @@
+{
+  "generated": "2026-07-26T03:50:00+03:00",
+  "networks": {
+    "orbinum": {
+      "chain_id": 2700,
+      "rpc": "https://rpc-1.testnet.orbinum.io",
+      "explorer": "https://explorer.testnet.orbinum.io",
+      "faucet": "https://faucet.orbinum.network",
+      "faucet_type": "cloudflare_turnstile",
+      "gas_token": "testORB",
+      "type": "substrate_evm",
+      "notes": "Privacy chain. 2% ORB airdrop for testnet users."
+    },
+    "tempo_moderato": {
+      "chain_id": 42431,
+      "rpc": "https://rpc.moderato.tempo.xyz",
+      "explorer": "",
+      "faucet_type": "rpc_method",
+      "faucet_method": "tempo_fundAddress",
+      "gas_token": "none (fee-less, TIP-20 stablecoins)",
+      "type": "evm_tip20",
+      "balances": {
+        "PathUSD": 999984,
+        "AlphaUSD": 999989,
+        "BetaUSD": 999994,
+        "ThetaUSD": 999994
+      }
+    },
+    "sepolia": {
+      "chain_id": 11155111,
+      "rpc": "https://ethereum-sepolia.publicnode.com",
+      "gas_token": "ETH",
+      "balance": 0.071860
+    },
+    "bsc_testnet": {
+      "chain_id": 97,
+      "rpc": "https://bsc-testnet.publicnode.com",
+      "gas_token": "tBNB",
+      "balance": 0.474769
+    },
+    "avalanche_fuji": {
+      "chain_id": 43113,
+      "rpc": "https://avalanche-fuji-c-chain.publicnode.com",
+      "gas_token": "AVAX",
+      "balance": 1.972101
+    }
+  },
+  "tokens": {
+    "HTT": {
+      "network": "sepolia",
+      "address": "0x250d3d0Cb16eCb76D5c1fFF48404eC144eD6B2EA",
+      "supply": 1000000
+    },
+    "HCAMP": {
+      "networks": {
+        "bsc_testnet": "0x9fB165D1929B97de2b8A8fab77b6141F93934C52",
+        "avalanche_fuji": "0x1aBb526a95A29674b2Ad034Bce3c9283534Ecb9d"
+      }
+    }
+  },
+  "deadlines": {
+    "aiw3_snapshot": "2026-07-28",
+    "aiw3_tge": "2026-08-03",
+    "plether_testnet_end": "2026-08-03",
+    "road_to_devcon": "2026-08-08"
+  }
+}
