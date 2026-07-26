@@ -1,7 +1,7 @@
 {
   "Orbinum": {
     "name": "Orbinum",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "rpc": {
       "url": "https://rpc-1.testnet.orbinum.io",
       "result": "0xa8c",
@@ -26,7 +26,7 @@
   },
   "DBK Chain": {
     "name": "DBK Chain",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "rpc": {
       "url": "https://rpc.mainnet.dbkchain.io",
       "result": "0x134d8db",
@@ -36,7 +36,7 @@
   },
   "SwarmBase": {
     "name": "SwarmBase",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://swarmbase.io",
       "status": 200,
@@ -44,19 +44,34 @@
     },
     "summary": "HTTP 200"
   },
+  "Silent Protocol": {
+    "name": "Silent Protocol",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "web": {
+      "url": "https://app.silentprotocol.org",
+      "status": 200,
+      "msg": "HTTP 200"
+    },
+    "summary": "HTTP 200"
+  },
+  "Merak Testnet": {
+    "name": "Merak Testnet",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
+    "summary": ""
+  },
   "AIW3": {
     "name": "AIW3",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
-      "url": "https://aiw3.io",
-      "status": 0,
-      "msg": "HTTP 000"
+      "url": "https://aiw3.ai",
+      "status": 200,
+      "msg": "HTTP 200"
     },
-    "summary": "HTTP 000"
+    "summary": "HTTP 200"
   },
   "Cambria": {
     "name": "Cambria",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://lobby.cambria.gg",
       "status": 200,
@@ -66,17 +81,17 @@
   },
   "Tradoor0": {
     "name": "Tradoor0",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
-      "url": "https://tradoor0.io",
-      "status": 0,
-      "msg": "HTTP 000"
+      "url": "https://tradoor0.xyz",
+      "status": 200,
+      "msg": "HTTP 200"
     },
-    "summary": "HTTP 000"
+    "summary": "HTTP 200"
   },
   "JTX": {
     "name": "JTX",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://jtx.app",
       "status": 200,
@@ -86,11 +101,11 @@
   },
   "Plether": {
     "name": "Plether",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "x": {
       "url": "https://x.com/plether_fi",
-      "status": 200,
-      "msg": "HTTP 200"
+      "status": 0,
+      "msg": "HTTP 000"
     },
     "github": {
       "url": "https://github.com/Plether-Fi",
@@ -101,7 +116,7 @@
   },
   "Robinhood Chain": {
     "name": "Robinhood Chain",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://robinhood.com/chain",
       "status": 200,
@@ -111,12 +126,12 @@
   },
   "GIWA": {
     "name": "GIWA",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "summary": ""
   },
   "3Jane": {
     "name": "3Jane",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://3jane.xyz",
       "status": 200,
@@ -126,7 +141,7 @@
   },
   "Legend": {
     "name": "Legend",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "web": {
       "url": "https://legend.io",
       "status": 200,
@@ -136,7 +151,7 @@
   },
   "Checkpoint": {
     "name": "Checkpoint",
-    "timestamp": "2026-07-26T02:11:12.886271+00:00",
+    "timestamp": "2026-07-26T02:30:52.051765+00:00",
     "summary": ""
   }
 }

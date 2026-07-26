@@ -49,8 +49,16 @@ CHECKS = {
         "web": "https://swarmbase.io",
         "rpc": None,
     },
+    "Silent Protocol": {
+        "web": "https://app.silentprotocol.org",
+        "rpc": None,
+    },
+    "Merak Testnet": {
+        "web": None,
+        "rpc": None,
+    },
     "AIW3": {
-        "web": "https://aiw3.io",
+        "web": "https://aiw3.ai",
     },
     "Cambria": {
         "web": "https://lobby.cambria.gg",
