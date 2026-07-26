@@ -13,6 +13,11 @@ from datetime import datetime, timezone
 
 TRACKER_FILE = os.path.expanduser("~/.hermes/testnet_campaigns.json")
 
+# Today's fresh scan data (2026-07-26 04:00 MSK)
+# Source: airdrops.io latest/speculative/confirmed, via proxy
+# Update timestamp
+SCAN_DATE = "2026-07-26 04:00 MSK"
+
 DEFAULT_CAMPAIGNS = {
     "canopy": {
         "name": "Canopy",
@@ -228,6 +233,56 @@ DEFAULT_CAMPAIGNS = {
         "last_checked": "None",
         "status": "active",
         "notes": "Built by Jito Labs (JitoSOL). No confirmed token. Referral program active."
+    },
+    "plether": {
+        "name": "Plether",
+        "type": "perpetual DEX testnet (confirmed airdrop)",
+        "url": "https://plether.io",
+        "docs": "Unknown",
+        "signal": "TIER 2: Confirmed airdrop, ends Aug 3, 24deg community temp",
+        "actions": [
+            "Join testnet on Ethereum",
+            "Follow X account",
+            "Open plDXY position",
+            "Complete before Aug 3 2026 deadline"
+        ],
+        "deadline": "Expires: Aug 3, 2026 (8 days)",
+        "last_checked": None,
+        "status": "active",
+        "notes": "Confirmed airdrop, ends Aug 3. 24° temp on airdrops.io. Low competition."
+    },
+    "tradoor0": {
+        "name": "Tradoor0",
+        "type": "market making bot (speculative retrodrop)",
+        "url": "https://tradoor0.io",
+        "docs": "Unknown",
+        "signal": "TIER 2: HOT 179deg: Market making bot, no token confirmed",
+        "actions": [
+            "Sign up and connect wallet",
+            "Use market making bot on Base",
+            "Refer others"
+        ],
+        "deadline": "No announced TGE",
+        "last_checked": None,
+        "status": "active",
+        "notes": "179° community temperature. Strong speculative retrodrop candidate on Base."
+    },
+    "collector_crypt": {
+        "name": "Collector Crypt",
+        "type": "NFT/gaming (confirmed airdrop)",
+        "url": "https://collectorcrypt.io",
+        "docs": "Unknown",
+        "signal": "TIER 2: Confirmed airdrop, 92deg temperature, $CARDS token",
+        "actions": [
+            "Connect wallet",
+            "Complete quests and collections",
+            "Refer others",
+            "Earn $CARDS tokens"
+        ],
+        "deadline": "TBD (ongoing campaign)",
+        "last_checked": None,
+        "status": "active",
+        "notes": "Confirmed $CARDS airdrop. 92° community interest. Check official site for quest details."
     }
 }
 
