@@ -8,16 +8,15 @@ TRACKER="$HOME/testnet-campaign-recon/testnet_tracker.py"
 echo "=== Testnet Monitor — $(date -u '+%Y-%m-%d %H:%M UTC') ==="
 
 declare -A URLS
-URLS["Canopy"]="https://canopy.io"
-URLS["Arc (Circle)"]="https://circle.com/arc"
-URLS["GIWA"]="https://giwa.io"
-URLS["Robinhood Chain"]="https://robinhood.com"
 URLS["Orbinum"]="https://orbinum.network"
 URLS["Orbinum RPC"]="https://rpc-1.testnet.orbinum.io"
-URLS["Cambria"]="https://cambria.game"
-URLS["AIW3"]="https://aiw3.io"
+URLS["Orbinum Faucet"]="https://faucet.orbinum.network"
+URLS["Orbinum Explorer"]="https://explorer.testnet.orbinum.network"
+URLS["Cambria"]="https://cambria.gg"
+URLS["AIW3"]="https://aiw3.ai"
 URLS["SwarmBase"]="https://swarmbase.io"
-URLS["JTX"]="https://jtx.app"
+URLS["Polymarket SDK"]="https://github.com/Polymarket/ts-sdk"
+URLS["Plether"]="https://plether.io"
 
 for name in "${!URLS[@]}"; do
     url="${URLS[$name]}"

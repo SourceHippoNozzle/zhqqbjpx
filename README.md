@@ -31,11 +31,29 @@ python3 ~/testnet_tracker.py
 python3 ~/testnet_tracker.py --check
 ```
 
+## Latest Verified Data
+
+| Campaign | Signal | Status | Urgency |
+|----------|--------|--------|---------|
+| **AIW3** | 98° ✅ CONFIRMED | Snapshot Jul 28, TGE Aug 3 | ⚠️ 2 days |
+| **Cambria** | 265° ✅ CONFIRMED | $RSGP TGE Aug 2026 | 🔥 Hot |
+| **Orbinum** | 193° ✅ CONFIRMED | Season 1 (2M ORB), testnet live | 📡 Active |
+| **SwarmBase** | 56° ✅ CONFIRMED | 20% of 1B $SWARM | 🆕 New |
+| **Plether** | 24° ✅ CONFIRMED | Ends Aug 3 | ⏳ Limited |
+
+## Builder Opportunities
+
+| Project | Issue | Tech | Effort |
+|---------|-------|------|--------|
+| **Polymarket/ts-sdk** | Openfort wallet provider (#121) | TypeScript, viem | Medium |
+
 ## Repo Contents
 
 | Path | Description |
 |------|-------------|
 | `docs/campaigns.md` | Full campaign details, URLs, action items |
 | `scripts/monitor.sh` | Automated status check script |
+| `scripts/campaign_dashboard.py` | Rich CLI dashboard with URL checks |
+| `scripts/orbinum_guide.py` | Orbinum testnet setup guide |
 | `references/` | Source links and extracted data |
 | `testnet_tracker.py` | JSON-backed opportunity tracker (copied to ~/) |
