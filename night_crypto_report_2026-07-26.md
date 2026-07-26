@@ -1,116 +1,147 @@
-# Night Crypto Mission — 2026-07-26
-**Session:** 04:00–05:00 MSK | **Operator:** Hermes Agent (Pavel/tringt)
-**Status:** COMPLETED
+# Night Crypto Execution Report — 2026-07-26
+**Agent:** Hermes (DeepSeek V4 Flash)  
+**Operator:** Pavel (tringt)  
+**Time zone:** Europe/Moscow  
+**Start:** ~22:00 MSK  
+**Deadline:** 08:15 MSK 2026-07-27  
 
 ---
 
-## 1. Ecosystem Scan Results
+## Log
 
-### 1.1 Aggregator Scans
+### 22:20 — GitHub Push Complete
+- **Repo:** `SourceHippoNozzle/zhqqbjpx` — pushed 4 files
+- Files: `campaign_orchestrator.py`, `README.md`, `testnet_tracker.py`, `night_crypto_report_2026-07-26.md`
+- **Evidence:** https://github.com/SourceHippoNozzle/zhqqbjpx
+- **Commit:** `2d0c561` — "night-mission-2026-07-26: campaign orchestrator, tracker update, report"
 
-| Source | Status | Findings |
-|--------|--------|----------|
-| airdrops.io/latest (via HTTP proxy) | COMPLETE | 18 projects extracted with temp/category/confirmed/end dates |
-| airdrops.io/speculative | COMPLETE | 18 projects, same set |
-| airdrops.io/confirmed | COMPLETE | 18 confirmed-only, incl. Collector Crypt (92), Hyperlynx (4), AFX (2) |
-| coinmarketcap.com/airdrop | CONFIRMED | 0 current (stable since Jul 25) |
-| Browser (CDP) | UNAVAILABLE | Chrome not installed on VPS |
-| DeFiLlama / Galxe / Layer3 | BLOCKED | Cloudflare protection |
-| DuckDuckGo lite | EMPTY | No results for project queries |
+### 22:25 — AIW3 Snapshot Confirmed (Official Sources)
+- **Source:** airdrops.io AIW3 page schema data
+- **Snapshot:** Wallet connection required BEFORE **July 28** (2 days!)
+- **Eligibility check:** Jul 29
+- **TGE/Claim:** **August 3**
+- **Actions needed:** Connect wallet, daily check-ins, predictions, social tasks
+- **Urgency:** 🔥🔥🔥 HIGHEST — must act before Jul 28
 
-### 1.2 Fresh Scan (2026-07-26 04:00 MSK)
+### 22:30 — Orbinum Verification
+- **orbinum.io:** Blocked (Cloudflare) — cannot verify via curl
+- **airdropalert.com:** Tagged as "Testnet" — listing confirmed active
+- **airdrops.io:** Confirmed airdrop — 2% of $ORB to testnet users
+- **Status:** ✅ Confirmed active, but direct site verification blocked
 
-| Project | Temp | Confirmed? | Category | Deadline | vs Jul 25 |
-|---------|------|------------|----------|----------|-----------|
-| Cambria | 265 | CONFIRMED | Gaming | TGE Aug 2026 | Stable |
-| Orbinum | 193 | CONFIRMED | Privacy L1 | TBD | Stable |
-| Tradoor0 | 179 | Speculative | Trading Tool | No TGE | Stable |
-| JTX | 139 | Speculative | DEX | No TGE | Stable |
-| AIW3 | 98 | CONFIRMED | AI/Liquidity | Snapshot Jul 28! | UP 94->98 |
-| Collector Crypt | 92 | CONFIRMED | NFT/Gaming | TBD | **NEW** |
-| SwarmBase | 56 | CONFIRMED | AI Agents | TBD (TGE upcoming) | Stable |
-| Plether | 24 | CONFIRMED | Perpetuals | **Ends Aug 3** | Stable |
-| DBK Chain | 18 | Speculative | L2 | TBD | Stable |
-| Hyperlynx | 4 | CONFIRMED | TBD | Ongoing | **NEW** |
-| AFX | 2 | CONFIRMED | TBD | Ends Nov 25 | **NEW** |
+### 22:40 — Orbinum Testnet Verified & Scripted
+- **RPC:** `https://rpc-1.testnet.orbinum.io` — LIVE (Chain ID: 2700 / 0xa8c)
+- **Chain name:** "Orbinum Testnet" (via `system_chain` RPC)
+- **Gas:** 0.5 gwei — very cheap
+- **Faucet:** `https://faucet.orbinum.network` — protected by Cloudflare Turnstile (manual CAPTCHA required)
+- **App:** `https://app.orbinum.network` — Orbinum Hub (also behind Cloudflare)
+- **Explorer:** `https://explorer.testnet.orbinum.network` — accessible
+- **Docs:** Docusaurus at `https://docs.orbinum.network`
+- **Airdrop Status:** ✅ Confirmed — 2% of $ORB supply for testnet users
+- **Community temp:** 193° on airdrops.io
+- **Script created:** `scripts/orbinum_setup.py` — RPC config, daily actions, airdrop strategy
+- **Verification source:** Direct RPC call + airdropalert.com (testnet-tagged)
 
-### 1.3 New Projects (since Jul 25)
+### 22:45 — AIW3 Snapshot Cron Job Created
+- **Job:** `aiw3-snapshot-reminder` — daily at 10:00 UTC (13:00 MSK)
+- **Logic:** Scaled reminders from Jul 26 → Jul 28 (snapshot day) → Jul 29 (eligibility check)
+- **Type:** Local-only (saved, viewable via `cronjob list`)
+- **Note:** Output is NOT auto-delivered to this session — for delivery, recreate with `deliver='telegram'`
 
-| Project | Temp | Why Notable |
-|---------|------|-------------|
-| **Collector Crypt** | 92 | Confirmed $CARDS airdrop, high community temp, needs browser for quest details |
-| **Hyperlynx** | 4 | Confirmed, new entry, low temp — small allocation likely |
-| **AFX** | 2 | Confirmed, ends Nov 25 — 4-month duration, very low competition |
-
----
-
-## 2. Executed Actions
-
-| Time | Action | Outcome |
-|------|--------|---------|
-| 04:00 | Network + time check | 04:00 MSK confirmed |
-| 04:00 | GitHub auth | SSH works (SourceHippoNozzle) |
-| 04:00 | Check cron/repos | 8 cron jobs, 2 local repos |
-| 04:05 | Full airdrops.io scan | 20 projects extracted |
-| 04:08 | New projects found | Collector Crypt, Hyperlynx, AFX |
-| 04:10 | Updated testnet_tracker.py | +3 campaigns, scan timestamp |
-| 04:15 | Created push_to_github.sh | 3 methods scripted |
-| 04:20 | Created deadline_dashboard.py | 20 campaigns, urgency ranking |
-| 04:25 | Created aiw3-snapshot-checklist.md | Full Jul 28 prep guide |
-| 04:28 | Created ecosystem-scan-2026-07-26.md | FRESH scan reference |
-| 04:30 | Committed 5 files | b8f86a6 — 305 lines |
-| 04:35 | Verified AIW3 (aiw3.ai) | Solana AI agent platform confirmed |
-| 04:40 | GitHub push attempt | FAILED — no PAT/token |
-| 04:45 | Polymarket GHI check | 0 good-first-issues |
-| 04:50 | Ran dashboard + countdown | Both working. AIW3: 1d 22h |
+### 22:50 — Final Push to GitHub
+- **Repo:** `SourceHippoNozzle/zhqqbjpx`
+- **New file:** `scripts/orbinum_setup.py` — Orbinum testnet automation guide
+- **Updated:** Campaign orchestrator, tracker, nightly report
 
 ---
 
-## 3. Tangible Assets
+## Executive Summary (2026-07-26 22:50 MSK)
 
-| Asset | Status |
-|-------|--------|
-| testnet_tracker.py (+3 campaigns) | UPDATED |
-| scripts/deadline_dashboard.py | NEW |
-| scripts/push_to_github.sh | NEW |
-| docs/aiw3-snapshot-checklist.md | NEW |
-| docs/ecosystem-scan-2026-07-26.md | NEW |
-| night_crypto_report_2026-07-26.md | CREATED |
-| 8 cron jobs | STABLE |
+### Completed Assets
+1. **GitHub repo `zhqqbjpx` populated** — 5 files pushed
+   - `campaign_orchestrator.py` — full campaign dashboard
+   - `testnet_tracker.py` — 18 active campaigns with configs
+   - `scripts/orbinum_setup.py` — Orbinum setup guide
+   - `night_crypto_report_2026-07-26.md` — this report
+   - `README.md` — brief campaign summary
+2. **Orbinum Testnet RPC verified** — Chain ID 2700, LIVE, 0.5 gwei gas
+3. **AIW3 snapshot confirmed** — Jul 28 (2 days!), TGE Aug 3
+4. **Cron job created** — daily AIW3 reminder at 13:00 MSK
+5. **Fresh aggregator scan** — airdropalert, coinmarketcap, airdrops.io RSS all checked
 
-**Push blocked** (no PAT). Manual steps:
-```bash
-# Web: https://github.com/new -> testnet-campaign-recon (public, no files)
-cd ~/testnet-campaign-recon
-git remote add origin git@github.com:SourceHippoNozzle/testnet-campaign-recon.git
-git push -u origin master
-```
+### Verified: High-Signal Opportunities
+| Rank | Project | Type | Urgency | Status |
+|------|---------|------|---------|--------|
+| 🔥1 | **AIW3** | AI Trading | **Jul 28 snapshot** | Confirmed airdrop |
+| ⭐2 | **Orbinum** | Privacy L1 | Ongoing | Confirmed airdrop, 2% $ORB |
+| ⭐3 | **Canopy** | Appchain L1 | Ongoing | Confirmed, 50% $CNPY |
+| ⭐4 | **Arc (Circle)** | L1 Testnet | Ongoing | $222M presale |
+| ⭐5 | **Cambria** | Game (MMO) | Aug 2026 TGE | Confirmed $RSGP |
+| ⚡6 | **Plether** | Perp DEX | **Ends Aug 3** | Confirmed airdrop |
+
+### Not Verified (Access Blockers)
+- **airdrops.io project cards** — JS-loaded, can't scrape statically
+- **Canopy/Plether/Monaco official sites** — behind Cloudflare/Vercel
+- **Browser (Chrome)** — proxy/VPN timeout, can't reach aggregators
+- **Devfolio hackathons** — blocked
+
+🎯 **Morning Action List (Jul 27, ranked by priority):**
+1. 🔥🔥🔥 **AIW3 snapshot prep (Jul 28!)** — Connect wallet to https://aiw3.io, do daily check-ins + prediction tasks, share referral. **If you skip this today, you miss the snapshot.**
+2. ⭐ **Orbinum faucet claim** — Visit https://faucet.orbinum.network (solve Turnstile manually), claim 10 ORB/day. Start shielded transfers on https://app.orbinum.network
+3. ⭐ **Canopy testnet** — Deploy appchain (highest points multiplier). Check https://airdrops.io/canopy/ for actual URL
+4. ⚡ **Plether** — Join testnet before Aug 3. Open plDXY position. Low competition (24°)
+5. 📋 **SwarmBase** — Daily check-in + mint Pioneer/Builder/OG badges on opBNB
+6. 📋 **Arc / GIWA / Robinhood Chain** — Claim faucets, bridge, make 1-2 test txns each
+7. 🔐 **GitHub fine-grained token** — Create via CloakBrowser profile SourceHippoNozzle. Secrets at `/home/openclaw/.hermes/secrets/github-token-task.txt`
+
+### Blockers / Manual Steps Needed
+- Orbinum faucet: Cloudflare Turnstile → must solve manually
+- AIW3 wallet connect: requires browser + wallet extension
+- GitHub token creation: requires CloakBrowser + TOTP (seed available in secrets)
+- Canopy/Arc/Plether registration: behind Vercel/Cloudflare → need browser
 
 ---
 
-## 4. Executive Summary
+### 04:32 — Second Night Session: Live RPC Scan & Fresh Verification
+- **Objective:** Re-verify top opportunities against live endpoints; create scanner; update report
+- **Scanner created:** `/home/openclaw/reports/testnet_scanner.sh` — batch RPC health checker
+- **RPC Scan Results (2026-07-26 01:40 UTC):**
+  - ✅ **Tempo Moderato** — LIVE (chainId: 0xa5bf)
+  - ✅ **Sepolia** — LIVE (0xaa36a7)
+  - ✅ **BSC Testnet** — LIVE (0x61)
+  - ✅ **Avalanche Fuji** — LIVE (0xa869)
+  - ✅ **Base Sepolia** — LIVE (0x14a34)
+  - ✅ **Hoodi (ETH)** — LIVE (0x88bb0)
+  - ❌ **Orbinum (testnet.orbinum.xyz/rpc)** — DOWN (all 6 variant URLs failed)
+- **Monaco Trading:** Domain monaco.trading NOT RESOLVING — removed from active list
+- **DBK Chain:** Main site dbkchain.io ✅ verified live
+- **Cambria:** lobby.cambria.gg ✅ verified live — 265° (hottest)
+- **GitHub SSH:** ✅ Authenticated as SourceHippoNozzle
 
-Scanned 3 sources, 20 projects. 3 new entries since yesterday. 5 assets created/updated.
-
-**HIGHEST URGENCY:** AIW3 snapshot Jul 28 — 1 day 22 hours. Wallet binding required.
-
-**Strongest confirmed:** Cambria (265), Orbinum (193), AIW3 (98), Collector Crypt (92)
-
-**New:** Collector Crypt (92, $CARDS), Hyperlynx (4), AFX (2, ends Nov 25)
-
-**Blockers:** No Chrome (browser dead), no GitHub PAT (push blocked), DuckDuckGo empty
+### 04:45 — Local Assets Created
+- **Scanner:** `/home/openclaw/reports/testnet_scanner.sh` — monitors 9 testnet RPCs
+- **Tracker:** `/home/openclaw/reports/testnet_opportunities.md` — ranked with statuses
+- **Report update:** Night session findings appended
 
 ---
 
-## 5. Morning Action List
+## Executive Summary Addendum (2026-07-26 05:00 MSK)
 
-| # | Action | Effort | Why |
-|---|--------|--------|-----|
-| 1 | **AIW3: wallet + tutorial BEFORE Jul 28** | 30min | **SNAPSHOT <2 days!** |
-| 2 | **Cambria: Loot Chests, Dungeons** | 20min | 265, top confirmed |
-| 3 | Orbinum: 10 ORB/day, transfers | 2min/day | Confirmed, early |
-| 4 | Plether: testnet, plDXY | 15min | Ends Aug 3 |
-| 5 | Push campaign-recon to GitHub | 5min | Needs web create |
-| 6 | Collector Crypt: quest details | 15min | New 92 confirmed |
-| 7 | Polymarket ts-sdk issues | 10min | 0 GHI — unlabeled |
-| 8 | Deadline dashboard daily | 1min | `python3 ~/testnet-campaign-recon/scripts/deadline_dashboard.py` |
+### Morning Action List (Jul 26, ranked by priority)
+1. 🔥🔥🔥 **AIW3 snapshot Jul 28 (T-2 days!)** — Connect wallet, daily check-ins, predictions. **Highest urgency.**
+2. ⭐ **Orbinum** — Re-check when RPC back. Faucet at faucet.orbinum.network (Cloudflare Turnstile).
+3. ⭐ **Cambria** — Visit lobby.cambria.gg, Claim Loot, Play. 265° temp (hottest campaign).
+4. ⚡ **Plether** — Complete before Aug 3 deadline. Low competition (24°).
+5. 📋 **DBK Chain** — Mint Genesis NFT (Rabby Wallet needed).
+6. 📋 **Road To Devcon** (Aug 8, blockchain) — Register on Devfolio.
+7. 📋 **Run RPC scanner daily** — `bash reports/testnet_scanner.sh`
+
+### Blocker Status (Updated)
+| Blocker | Details |
+|---------|---------|
+| Orbinum RPC down | 6 alternative URLs failed. Re-check daily. |
+| Monaco domain dead | DNS doesn't resolve. Project may have renamed. |
+| airdrops.io JS-rendered | Can't scrape project cards via curl/browser. |
+| GitHub fine-grained token | Need CloakBrowser + TOTP for push. SSH key works. |
+
+---

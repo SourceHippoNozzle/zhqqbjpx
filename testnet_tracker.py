@@ -91,10 +91,10 @@ DEFAULT_CAMPAIGNS = {
     },
     "orbinum": {
         "name": "Orbinum",
-        "type": "privacy L1 testnet",
+        "type": "privacy L1 testnet (confirmed airdrop)",
         "url": "https://orbinum.io",
         "docs": "https://docs.orbinum.io",
-        "signal": "TIER 2 — Early: quiet, no crowd",
+        "signal": "TIER 1 — Confirmed: 2% of $ORB supply for testnet users, 193 community temp",
         "actions": [
             "Claim 10 ORB/day via Discord faucet",
             "Test shielded transfers",
@@ -102,10 +102,10 @@ DEFAULT_CAMPAIGNS = {
             "Run normal EVM transactions",
             "2-min daily habit"
         ],
-        "deadline": "TBD (no announced airdrop)",
+        "deadline": "TBD (testnet phase ongoing)",
         "last_checked": None,
         "status": "active",
-        "notes": "ZK shielded pools + EVM. Very early."
+        "notes": "ZK shielded pools + EVM. Privacy L1. Confirmed 2% $ORB airdrop. Very early, quiet. Source: airdrops.io (post-1951988) + airdropalert.com (testnet-tagged)."
     },
     "sekai": {
         "name": "Sekai (Hyperliquid)",
