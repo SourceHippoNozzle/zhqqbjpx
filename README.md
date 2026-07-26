@@ -1,59 +1,78 @@
-# Testnet Campaign Reconnaissance
+# Crypto Campaign Tracker
 
-**Curated findings, scripts, and action plans for Web3 testnet participation.**
+Automated campaign tracking for testnet, airdrop, and builder opportunities.
 
-Maintained for Pavel (tringt). Last updated: 2026-07-26.
-
-## Active Campaigns (Tier 1)
-
-| Project | Type | Status | Signal |
-|---------|------|--------|--------|
-| **Canopy** | L1 framework testnet | ✅ Confirmed airdrop | 50% $CNPY to community |
-| **Arc** | Circle L1 testnet | 🔮 Speculative | $222M presale, 60% ecosystem |
-| **GIWA** | Upbit L2 testnet | 🔮 Speculative | 100M+ txns, Base/Ink precedent |
-| **Robinhood Chain** | L1 ecosystem | 🔮 No token yet | Launched Jul 1, free gas 90d |
-
-## Early Stage (Tier 2)
-
-Orbinum, Sekai, Checkpoint, Monetrix, BULK, Hylo — see `testnet_tracker.py`
-
-## Infrastructure & Node Programs (Tier 3)
-
-EigenCloud (AVS), Hyperlane (AVS), AltLayer (AVS/RaaS), Story/DATA (node), Farcaster/Snapchain (node)
-
-## Quickstart
+## Quick Start
 
 ```bash
-# View all tracked campaigns
-python3 ~/testnet_tracker.py
+# View markdown report
+python3 tracker.py
 
-# Mark all as checked
-python3 ~/testnet_tracker.py --check
+# View terminal table
+python3 tracker.py table
+
+# Check upcoming deadlines
+python3 deadline-monitor.py
+
+# Urgent deadlines only
+python3 deadline-monitor.py --urgent
 ```
 
-## Latest Verified Data
+## Tracked Campaigns (July 2026)
 
-| Campaign | Signal | Status | Urgency |
-|----------|--------|--------|---------|
-| **AIW3** | 98° ✅ CONFIRMED | Snapshot Jul 28, TGE Aug 3 | ⚠️ 2 days |
-| **Cambria** | 265° ✅ CONFIRMED | $RSGP TGE Aug 2026 | 🔥 Hot |
-| **Orbinum** | 193° ✅ CONFIRMED | Season 1 (2M ORB), testnet live | 📡 Active |
-| **SwarmBase** | 56° ✅ CONFIRMED | 20% of 1B $SWARM | 🆕 New |
-| **Plether** | 24° ✅ CONFIRMED | Ends Aug 3 | ⏳ Limited |
+| Priority | Project | Signal | Deadline | Actions |
+|----------|---------|--------|----------|---------|
+| 🏆 #1 | **Orbinum Network** | HIGH 🔥 | Ongoing (TBD) | Interact with privacy testnet |
+| ⏰ #2 | **AIW3** | HIGH 🔥 | **Snapshot Jul 28!** | Register, do daily tasks |
+| ⏰ #3 | **Plether** | HIGH | **Ends Aug 3** | Join perp DEX testnet |
+| #4 | Cambria | MEDIUM | Ongoing | Solana gaming |
+| #5 | SwarmBase | MEDIUM | Ongoing | AI agents, daily check-in |
+| #6 | Monaco Trading | MEDIUM | Speculative | Sei testnet |
+| #7 | DBK Chain | MEDIUM | Ongoing | Mint Genesis NFT |
 
-## Builder Opportunities
+## Network Configs
 
-| Project | Issue | Tech | Effort |
-|---------|-------|------|--------|
-| **Polymarket/ts-sdk** | Openfort wallet provider (#121) | TypeScript, viem | Medium |
+### Orbinum Testnet
+- **Chain ID:** 2700 (0xA8C)
+- **RPC:** https://rpc-1.testnet.orbinum.io
+- **Explorer:** https://explorer.testnet.orbinum.io
+- **Faucet:** https://faucet.orbinum.network (Cloudflare Turnstile)
+- **Docs:** https://docs.orbinum.network
+- **GitHub:** github.com/orbinum
 
-## Repo Contents
+### Tempo Moderato (already active)
+- **Chain ID:** 42431
+- **RPC:** https://rpc.moderato.tempo.xyz
+- **Gas:** Fee-less (TIP-20 stablecoins)
+- **Balances:** PathUSD 999,984 | AlphaUSD 999,989 | BetaUSD 999,994 | ThetaUSD 999,994
 
-| Path | Description |
-|------|-------------|
-| `docs/campaigns.md` | Full campaign details, URLs, action items |
-| `scripts/monitor.sh` | Automated status check script |
-| `scripts/campaign_dashboard.py` | Rich CLI dashboard with URL checks |
-| `scripts/orbinum_guide.py` | Orbinum testnet setup guide |
-| `references/` | Source links and extracted data |
-| `testnet_tracker.py` | JSON-backed opportunity tracker (copied to ~/) |
+## Past Campaigns (Completed)
+
+### Night 2026-07-25: 40 on-chain transactions across 4 networks
+| Network | Txns | Highlights |
+|---------|------|------------|
+| Sepolia | 5 | HTT token deployed (Vyper 0.4.3) |
+| BSC Testnet | 12 | PancakeSwap swap, HCAMP token deployed |
+| Tempo Moderato | 14 | Stablecoin burns, faucet claimed |
+| Avalanche Fuji | 9 | HCAMP token deployed |
+| **Total** | **40** | |
+
+## Setup
+
+```bash
+# Clone
+git clone git@github.com:SourceHippoNozzle/crypto-campaign-tracker.git
+cd crypto-campaign-tracker
+
+# Run tracker
+python3 tracker.py
+```
+
+## Safety
+
+- ❌ No real money ever touched
+- ❌ No wallet connections to unknown sites
+- ❌ No private keys shared or stored
+- ✅ Testnet-only activity
+- ✅ Open source scripts
+- ✅ Faucet-sourced tokens only
