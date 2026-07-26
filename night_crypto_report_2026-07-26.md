@@ -172,3 +172,39 @@ All top 10 projects require wallet connection or funds:
 
 ## Current Date & Time
 2026-07-26 01:56 UTC
+
+---
+
+## Live Status Verification — 2026-07-26 02:11 UTC
+
+**Method:** RPC eth_chainId probes + HTTP status checks via curl over proxy
+**Result:** 9/13 tracked projects reachable; Orbinum fully green (RPC+Faucet+App+Explorer)
+
+### ✅ Fully Verified Live
+| Project | RPC | Web/Faucet | Status |
+|---------|-----|-----------|--------|
+| **Orbinum** | ✅ 0xa8c (2700) | Faucet 200, App 200, Explorer 200 | 🟢 All green |
+| **Cambria** | — | lobby.cambria.gg 200 | 🟢 Game live |
+| **JTX** | — | jtx.app 200 | 🟢 Trading live |
+| **SwarmBase** | — | swarmbase.io 200 | 🟢 Site up |
+| **Robinhood Chain** | — | robinhood.com/chain 200 | 🟢 Chain live |
+| **3Jane** | — | 3jane.xyz 200 | 🟢 Site up |
+| **Legend** | — | legend.io 200 | 🟢 Site up |
+| **Plether** | — | X @plether_fi 200, GitHub 200 | 🟢 Social verified |
+| **DBK Chain** | ⚠️ 0x134d8db (mainnet) | — | 🟡 Mainnet live |
+
+### ❌ Down / Unresolved
+| Project | Issue |
+|---------|-------|
+| **AIW3** | aiw3.io → HTTP 000 (domain unreachable) |
+| **Tradoor0** | tradoor0.io → HTTP 000 (domain unreachable) |
+| **Monaco** | Domain not found (tried 7 variants) — needs reinvestigation |
+| **GIWA** | No public endpoints configured |
+| **Checkpoint** | No public endpoints configured |
+
+### 📦 Assets Created/Updated
+1. `scripts/live_status_check.py` — Live RPC/HTTP probe for all tracked projects
+2. `scripts/orbinum_setup.py` — Fixed (curl-based RPC check now works with proxy)
+3. `opportunities_tracker.json` — Updated 11/19 entries with `last_verified` timestamps
+4. `live_status_2026-07-26.json` — Full raw probe results
+

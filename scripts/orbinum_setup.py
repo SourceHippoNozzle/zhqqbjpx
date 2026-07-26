@@ -31,15 +31,22 @@ import json
 
 def check_rpc():
     """Verify RPC is responding"""
-    import urllib.request
-    data = json.dumps({"jsonrpc": "2.0", "method": "eth_chainId", "params": [], "id": 1}).encode()
-    req = urllib.request.Request(RPC_URL, data=data, headers={"Content-Type": "application/json"})
+    # Use curl with proxy support (urllib doesn't respect env proxy vars)
     try:
-        resp = urllib.request.urlopen(req, timeout=10)
-        result = json.loads(resp.read())
-        chain_id = int(result["result"], 16)
-        print(f"✅ RPC Live — Chain ID: {chain_id} ({hex(chain_id)})")
-        return chain_id == CHAIN_ID
+        import subprocess
+        body = json.dumps({"jsonrpc": "2.0", "method": "eth_chainId", "params": [], "id": 1})
+        result = subprocess.run(
+            ["curl", "-s", "--max-time", "10", "-X", "POST",
+             "-H", "Content-Type: application/json", "-d", body, RPC_URL],
+            capture_output=True, text=True, timeout=12
+        )
+        if result.returncode == 0:
+            resp = json.loads(result.stdout)
+            chain_id = int(resp["result"], 16)
+            print(f"✅ RPC Live — Chain ID: {chain_id} ({hex(chain_id)})")
+            return chain_id == CHAIN_ID
+        print(f"❌ RPC Error: curl exited {result.returncode}")
+        return False
     except Exception as e:
         print(f"❌ RPC Error: {e}")
         return False
